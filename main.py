@@ -61,10 +61,10 @@ for index, row in final_df.iterrows(): #cmt Ahora vamos a recorrer las filas con
         # blq#################### Step 4.1 ######################
         connection = smtplib.SMTP("smtp.gmail.com", port=587)  # cmt Inicializamos la clase que se conectará al servicio
         connection.starttls()  # cmt Comienza la protección del intercambio de información
-        connection.login(user=my_email, password=my_app_password)  # cmt Hacemos login con nuestras credenciales
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)  # cmt Hacemos login con nuestras credenciales
 
         connection.sendmail(  # cmt La estructura para poder enviar el correo
-            from_addr=my_email,
+            from_addr=MY_EMAIL,
             to_addrs=f"{email_destination}",
             msg=f"Subject: Happy Birthday\n\n{new_letter}")
         connection.close()  # cmt Cerramos la conexión
