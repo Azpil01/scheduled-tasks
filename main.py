@@ -31,7 +31,7 @@ friends_birthdays = { #cmt creamos un diccionario con los datos que vamos a agre
     "email": ["burankita@gmail.com", "enriqueazpilcuet@hotmail.com"],
     "year": [1986, 1987],
     "month": [9,9],
-    "day": [22, 22]
+    "day": [23, 23]
 }
 
 new_data =pandas.DataFrame(friends_birthdays) #cmt Creamos un Data Frame con los nuevos datos
